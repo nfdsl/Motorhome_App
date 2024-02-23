@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Praça Carlos Telles",
+    "type": "Square",
+    "latitude": -31.3354106630389,
+    "longitude": -54.104502346031104,
+    "address": "Av Sete de Setembro - Centro, Bagé, Rio Grande do Sul",
+    "numberOfStar": 4,
+    "rating": 4.5,
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/ed/c1/6e/praca-carlos-telles.jpg?w=1200&h=1200&s=1"
+  },
+  {
+    "id": 2,
+    "title": "Rincão do Inferno",
+    "type": "Panoramic Point",
+    "latitude": -30.85921816536143,
+    "longitude": -53.70971292578122,
+    "address": "Unnamed Road, Bagé, Rio Grande do Sul",
+    "numberOfStar": 5,
+    "rating": 5,
+    "image": "https://journals.openedition.org/confins/docannexe/image/12086/img-1-small580.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Museu Dom Diogo de Souza",
+    "type": "Museum",
+    "latitude": -30.707404230771036,
+    "longitude": -54.1949838104653,
+    "address": "Av Emilio Guilyan, 759, Bagé, Rio Grande do Sul",
+    "numberOfStar": 5,
+    "rating": 4.9,
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/cf/08/57/escadaria-do-museu.jpg?w=1200&h=-1&s=1"
+  }
+]
