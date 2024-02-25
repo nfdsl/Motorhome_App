@@ -1,9 +1,9 @@
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import HomeScreen from '../screens/homeScreen';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import HomeScreen from '../screens/HomeScreen';
 import ListScreen from '../screens/ListScreen';
-import {colors, sizes} from '../components/Theme';
-import {StyleSheet, Animated} from 'react-native';
+// import { colors, sizes } from '../components/Theme';
+// import { StyleSheet, Animated } from 'react-native';
 
 const tabs = [
   {
@@ -27,7 +27,7 @@ const TabNavigator = () => {
           headerShown: false,
           tabBarShowLabel: false,
         }}>
-        {tabs.map(({name, screen}, index) => {
+        {tabs.map(({ name, screen }, index) => {
           return (
             <Tab.Screen
               key={name}
@@ -37,7 +37,7 @@ const TabNavigator = () => {
           );
         })}
 
-        
+
       </Tab.Navigator>
     </>
   );
