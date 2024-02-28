@@ -16,15 +16,27 @@ const PlaceCardList = () => {
           }}
         />
         <View style={styles.cardText} >
-          <Text style={styles.cardTitle}>Local Placeholder </Text>
-          <Text>Nkm de distância | Cidade, CD</Text>
+          <Text testID="cardTitle" style={styles.cardTitle}>Local Placeholder </Text>
+          <Text testID="cardDesc" >Nkm de distância | Cidade, CD</Text>
+
+          <View style={styles.details}>
+            <View style={{ flexDirection: 'row', flex: 1, alignSelf: 'flex-end' }}>
+              <AntDesign name="camera" size={24} color="black" />
+              <AntDesign name="message1" size={24} color="black" />
+            </View>
+          </View>
+
           {/* TBD - Photo and comment icons*/}
+
         </View>
-        <View style={{ flex: 1, alignSelf: 'flex-start' }}>
+        <View style={{ flexDirection: 'column', flex: 1, alignSelf: 'flex-start', alignContent: 'flex-end' }}>
           {/* TBD - Heart Button becomes filled heart when favorited name="heart"*/}
-          <AntDesign style={{ alignSelf: 'flex-end' }} name="hearto" size={24} color="black" />
+          <AntDesign testID="heartButton" style={{ alignSelf: 'flex-end' }} name="hearto" size={24} color="black" />
+          <View testID="starRating" style={{ flex: 1, alignSelf: 'flex-end', flexDirection: 'row' }}>
+            <AntDesign style={{ alignSelf: 'flex-end' }} name="star" size={24} color="yellow" />
+            <Text style={{ alignSelf: 'flex-end' }}> 4.7 </Text>
+          </View>
         </View>
-        {/* TBD - Star rating in bottom right*/}
       </View>
     </View>
   );
@@ -37,7 +49,6 @@ const styles = StyleSheet.create({
     width: width,
     flexDirection: 'row',
     alignContent: 'flex-start',
-    alignItems: 'left',
     backgroundColor: '#fff'
   },
   cardImg: {
@@ -52,6 +63,10 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     flexWrap: 'wrap'
+  },
+  details: {
+    flex: 1,
+    alignSelf: 'flex-start',
   },
   mainPlaceholder: {
     flex: 1,
