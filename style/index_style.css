@@ -1,0 +1,251 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell{
+    width: 26%;
+    height: 94vh;
+    border-radius: 16px;
+    /* background-color: blue; */
+    justify-content: start;
+    padding: 0px 20px;
+    flex-direction: column;
+    box-shadow: 6px 4px 15px #32313d43;
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    padding: 40px 0px;
+    padding-bottom: 8px;
+    background-color: white;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.header span{
+    font-size: 40px;
+    color: #A8B1CE;
+    cursor: pointer;
+}
+.header #favorito{
+    color: #FB7200;
+}
+.header .logo{
+    width: 30%;
+}
+.conteudo{
+    width: 100%;
+    justify-content: space-between;
+    padding: 24px 0px;
+    padding-top: 0px;
+}
+/* input de pesquisa */
+.pesquisa{
+    width: 100%;
+}
+.form-pesquisa{
+    display: flex;
+    width: 100%;
+    background-color: #E9E9F4;
+    border: 1px solid #16A66D;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 0px 16px;
+}
+.form-pesquisa span{
+    font-size: 30px;
+}
+.form-pesquisa input{
+    border: none;
+    padding: 20px 10px;
+    background: none;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+}
+/* Filter Carrousel */
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  min-height: 85px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner h4{
+    font-size: 10px;
+    color: #797979;
+}
+
+.carousel-item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 12%;
+  text-align: center;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.carousel-item span{
+    font-size: 30px;
+    color: #A8B1CE;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: white;
+  background-color: #3333337c;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* mapa */
+.mapa{
+    width: 100%;
+}
+.mapa iframe{
+    width: 100%;
+    height: 60vh;
+}
+
+/* Pop-UP */
+.popup-container {
+    display: none;
+    position: fixed;
+    bottom: 6%;
+    width: 26%;
+    background-color: white;
+    transition: transform 0.3s ease, display 0s 0.3s; /* Added display transition */
+    transform: translateY(100%);
+    z-index: 1;
+  
+}
+
+.popup-content {
+   padding: 20px;
+   text-align: center;
+}
+
+.popup-button {
+    position: absolute;
+    top: 90%;
+    padding: 14px;
+    background-color: #16A66D;
+    color: white;
+    border: none;
+    border-radius: 34px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 2;
+}
+.popup-button span{
+    padding: 0px 8px;
+}
+.holder{
+    padding-bottom: 20px;
+    width: 100%;
+    flex-direction: column;
+}
+.holder .primeiro{
+    border-radius: 16px;
+    min-width: 100%;
+    min-height: 130px;
+    background-image: url(../static/banner.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.holder .segundo{
+    width: 100%;
+    min-height: 130px;
+}
+.holder .imagem{
+    width: 30%;
+    height: 110px;
+}
+.holder .imagem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}.holder .descricao{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 10px 16px;
+    height: 110px;
+    justify-content: space-between;
+}
+.descricao h2{
+    color: #A8B1CE;
+    font-size: 14px;
+}
+.descricao .flex{
+    width: 100%;
+    justify-content: space-between;
+}
+.flex h1{
+    font-size: 18px;
+    color: #676D82;
+    font-weight: 300;
+}
+.flex span{
+    color: #676D82;
+    padding-left: 10px;
+}
+/* tablet */
+@media only screen and (max-width: 1650px){
+    .carousel-item {
+        padding: 20px 11%;
+      }
+}
+@media only screen and (max-width: 1500px){
+    .carousel-item {
+        padding: 20px 10%;
+      }
+}
+/* cell */
+@media only screen and (max-width: 600px){
+    body{
+        padding: 0px;
+    }
+    .cell{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+    }
+    .header .logo{
+        width: 40%;
+    }
+    .popup-container{
+        width: 100%;
+    }
+    .carousel-item{
+        padding: 20px 10%;
+    }
+}
